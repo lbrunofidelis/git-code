@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
-import { Graphs, Home } from './pages';
+import { Graphs, Home, Radar } from './pages';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" exact={true} component={Home} />
-            <Route path="/graphs" component={Graphs} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root')
