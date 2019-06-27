@@ -13,7 +13,7 @@ class Sidebar extends Component {
     <SideNav.Nav defaultSelected="home">
         <NavItem eventKey="home">
             <NavIcon>
-                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                <i className="fa fa-home" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
                 Home
