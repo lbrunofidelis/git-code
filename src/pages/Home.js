@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import '../styles/App.css';
 import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar'
+import Pizza from '../components/Pizza'
 function Home() {
     return (
         <div className="App">
@@ -14,7 +15,9 @@ function Home() {
                 </p>
                 <Link to="/graphs">
                     Gráficos
+                    
                 </Link>
+                <Pizza/>
             </header>
         </div>
     );

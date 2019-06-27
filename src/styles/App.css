@@ -32,3 +32,8 @@
     transform: rotate(360deg);
   }
 }
+
+.Grafico{
+  width: 200px;
+  height:1.5em ;
+}
