@@ -25,9 +25,9 @@ class Pizza extends Component {
     
     render() {
         return (
-            <div className = "Grafico">
+            
             <Pie data={data} />
-            </div>
+           
 )           
     }
 }
