@@ -3,9 +3,6 @@ import Radar from '../components/Radar';
 import Home from './Home';
 
 class RadarPage extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return(

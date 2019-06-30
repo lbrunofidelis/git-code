@@ -1,12 +1,13 @@
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 class Sidebar extends Component {
     render() {
         return (
 <SideNav
     onSelect={(selected) => {
-        // Add your code here
     }}
 >
     <SideNav.Toggle />
@@ -26,14 +27,15 @@ class Sidebar extends Component {
             <NavText>
                 Charts
             </NavText>
-            <NavItem eventKey="charts/linechart">
+            <NavItem eventKey="/radar">
                 <NavText>
-                    Line Chart
+                <Link to="/pizza">Pizza</Link>
+
                 </NavText>
             </NavItem>
             <NavItem eventKey="charts/barchart">
                 <NavText>
-                    Bar Chart
+                <Link to="/radar">Radar</Link>
                 </NavText>
             </NavItem>
         </NavItem>

@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,4 +37,12 @@
   width: 900px;
   height: 600px;
   
+}
+.Footer
+{display:flex;
+justify-content:center;
+align-items:flex-end;
+width:100%;
+height:2rem;
+background-color:#db3d44;
 }
