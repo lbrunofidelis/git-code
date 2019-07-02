@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -9,7 +10,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
+ 
+  background-image: url("../image/Background.jpg");
+  
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +36,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Grafico{
+  width: 900px;
+  height: 600px;
+  
+}
+.Footer
+{display:flex;
+justify-content:center;
+align-items:flex-end;
+width:100%;
+height:2rem;
+background-color:#db3d44;
+}
+
+.Titulo{
+  color: black;
+}
+.Sub-titulo{
+  color: black;
+}
+.Paragrafo{
+  color: black;
 }

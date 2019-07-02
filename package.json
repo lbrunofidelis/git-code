@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@trendmicro/react-sidenav": "^0.4.5",
+    "browserslist": "^4.6.3",
+    "caniuse-lite": "^1.0.30000974",
     "chart.js": "^2.8.0",
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
@@ -30,5 +33,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  },
+  "resoluções": {
+    "browserslist": "4.6.2",
+    "caniuse-lite": "1.0.30000974"
   }
 }

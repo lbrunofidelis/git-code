@@ -1,7 +1,9 @@
 import Home from './Home'
-import Graphs from './Graphs'
+import RadarPage from './RadarPage';
+import PizzaPage from './PizzaPage';
 
 export {
     Home,
-    Graphs
+    RadarPage,
+    PizzaPage
 }

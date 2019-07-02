@@ -1,22 +1,31 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React, { Component } from 'react';
+
 import '../styles/App.css';
 import { Link } from 'react-router-dom';
+import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
-function Home() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Home
-                </p>
-                <Link to="/graphs">
-                    Gráficos
-                </Link>
-            </header>
-        </div>
-    );
+class Home extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <Sidebar/>
+                    <div className = "Grafico">
+                        {this.props.children}
+                    </div>
+                    
+                </header>
+                <div className ="Footer">
+                    <Footer/>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Home;
