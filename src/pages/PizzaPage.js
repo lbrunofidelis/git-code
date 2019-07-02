@@ -9,13 +9,13 @@ class PizzaPage extends Component {
         return(
             <Home>
                 <Pizza />
-                <button className="btn btn-default">
+                <button className="btn Pizza-btn">
                     Distribuição de população
                 </button>
-                <button className="btn btn-default">
+                <button className="btn Pizza-btn">
                     Acúmulo de renda
                 </button>
-                <button className="btn btn-default">
+                <button className="btn Pizza-btn">
                     Acúmulo de escolaridade
                 </button>
             </Home>

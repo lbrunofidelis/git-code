@@ -10,7 +10,7 @@ class Inicio extends Component {
             <Home>
                 <div>
                     <h1 className ="Titulo">
-                        Desenvolvimento de sofware
+                        Desenvolvimento de software
                     </h1>
                     <div>
                         <h3 className ="Sub-titulo">
