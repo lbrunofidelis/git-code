@@ -4,6 +4,7 @@ import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
 import { RadarPage, PizzaPage } from './pages';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Inicio from './pages/Inicio';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -11,6 +12,7 @@ ReactDOM.render(
             <Route path="/" exact={true} component={RadarPage} />
             <Route path="/radar" component={RadarPage} />
             <Route path="/pizza" component={PizzaPage} />
+            <Route path="/Inicio" component={Inicio} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root')

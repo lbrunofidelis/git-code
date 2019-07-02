@@ -17,7 +17,7 @@ class Sidebar extends Component {
                 <i className="fa fa-home" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
-                Home
+            <Link to="/Inicio">Home</Link>
             </NavText>
         </NavItem>
         <NavItem eventKey="charts">
