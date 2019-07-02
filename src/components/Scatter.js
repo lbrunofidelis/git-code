@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Scatter} from 'react-chartjs-2';
 import '../styles/App.css';
-import Pizza from './Pizza';
 
 const data = {
   labels: ['Scatter'],
@@ -45,6 +44,6 @@ class Scatter extends Component {
         return (
             <Pie data={data} />
         )
-    }
+    };
 }
-export default Pizza;
+export default Scatter;
