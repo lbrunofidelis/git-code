@@ -1,0 +1,50 @@
+import React, { Component } from 'react';
+import {Scatter} from 'react-chartjs-2';
+import '../styles/App.css';
+import Pizza from './Pizza';
+
+const data = {
+  labels: ['Scatter'],
+  datasets: [
+    {
+      label: 'My First dataset',
+      fill: false,
+      backgroundColor: 'rgba(75,192,192,0.4)',
+      pointBorderColor: 'rgba(75,192,192,1)',
+      pointBackgroundColor: '#fff',
+      pointBorderWidth: 1,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+      data: [
+        /* import { csvlink, csvdownload } form "react-csv"
+        const csvData = [
+            ["firstname", "lastname", "email"],
+            ["Fulano", "Silva", "fulanosilva@gmail.com"]
+        ];
+        <CSVLink data={csvData}>Download me</CSVLink>;
+         or
+        <CSVDownload data={csvData} target="_blank" />; */
+        { x: 65, y: 75 },
+        { x: 59, y: 49 },
+        { x: 80, y: 90 },
+        { x: 81, y: 29 },
+        { x: 56, y: 36 },
+        { x: 55, y: 25 },
+        { x: 40, y: 18 },
+      ]
+    }
+  ]
+};
+
+class Scatter extends Component {
+    render() {
+        return (
+            <Pie data={data} />
+        )
+    }
+}
+export default Pizza;
