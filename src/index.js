@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
-import { RadarPage, PizzaPage } from './pages';
+import { RadarPage, PizzaPage, PontoPage, Inicio } from './pages';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Inicio from './pages/Inicio';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -13,6 +12,7 @@ ReactDOM.render(
             <Route path="/radar" component={RadarPage} />
             <Route path="/pizza" component={PizzaPage} />
             <Route path="/Inicio" component={Inicio} />
+            <Route path="/ponto" component={PontoPage} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root')
