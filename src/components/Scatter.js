@@ -37,13 +37,13 @@ const data = {
       ]
     }
   ]
-};
+}
 
-class Scatter extends Component {
+class ScatterGraph extends Component {
     render() {
         return (
-            <Pie data={data} />
+            <Scatter data={data} />
         )
-    };
+    }
 }
-export default Scatter;
+export default ScatterGraph;
