@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {Pie} from 'react-chartjs-2';
 import '../styles/App.css';
+
 const data = {
 	labels: [
-		'Red',
-		'Green',
-		'Yellow'
+		'Alta',
+		'Média',
+		'Baixa'
 	],
 	datasets: [{
 		data: [300, 50, 100],
@@ -21,14 +22,13 @@ const data = {
 		]
 	}]
 };
+
 class Pizza extends Component {
     
     render() {
-        return (
-            
+        return ( 
             <Pie data={data} />
-           
-)           
-    }
+		)
+	};
 }
 export default Pizza;

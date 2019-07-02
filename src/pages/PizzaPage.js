@@ -9,6 +9,15 @@ class PizzaPage extends Component {
         return(
             <Home>
                 <Pizza />
+                <button className="btn btn-default">
+                    Distribuição de população
+                </button>
+                <button className="btn btn-default">
+                    Acúmulo de renda
+                </button>
+                <button className="btn btn-default">
+                    Acúmulo de escolaridade
+                </button>
             </Home>
         )
     }

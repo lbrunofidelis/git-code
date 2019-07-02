@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 class Sidebar extends Component {
     render() {
         return (
-<SideNav
+<SideNav style={{backgroundColor: '#4A3632' }}
     onSelect={(selected) => {
+        console.log("selected:", selected);
     }}
 >
     <SideNav.Toggle />
@@ -17,7 +18,9 @@ class Sidebar extends Component {
                 <i className="fa fa-home" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
-                <Link to="/Inicio">Home</Link>
+                <Link to="/Inicio">
+                        Home
+                </Link>
             </NavText>
         </NavItem>
         <NavItem eventKey="charts">
