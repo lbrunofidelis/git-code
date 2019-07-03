@@ -3,9 +3,18 @@ import { Radar } from 'react-chartjs-2';
 
 const radar = {
     labels: ['Renda', 'Escolaridade', 'Idade média', 'Horas de trabalho'],
+    options: {
+        scale: {
+          pointLabels: {
+            fontSize: 20
+          }
+        }
+      },
+
     datasets: [
         {
             label: 'Pessoa 1',
+            
             backgroundColor: 'rgba(179,181,198,0.2)',
             borderColor: 'rgba(179,181,198,1)',
             pointBackgroundColor: 'rgba(179,181,198,1)',
@@ -31,7 +40,7 @@ class RadarGraph extends Component {
 
     render() {
         return (
-            <Radar data={radar} />
+            <Radar data={radar} pointLabelFontSize = {20} />
         )
     }
 }
