@@ -4,20 +4,23 @@ import '../styles/App.css';
 
 const data = {
   labels: ['Scatter'],
+
+
   datasets: [
     {
-      label: 'My First dataset',
-      fill: false,
+      label: ["My First dataset"],
+      fill: true,
       backgroundColor: 'rgba(75,192,192,0.4)',
       pointBorderColor: 'rgba(75,192,192,1)',
       pointBackgroundColor: 'rgba(75,132,197,0.85)',
-      pointBorderWidth: 1,
+      pointBorderWidth: 10,
       pointHoverRadius: 5,
       pointHoverBackgroundColor: 'rgba(75,192,192,1)',
       pointHoverBorderColor: 'rgba(220,220,220,1)',
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
+      
       data: [
         { x: 65, y: 75 },
         { x: 59, y: 49 },
@@ -26,10 +29,22 @@ const data = {
         { x: 56, y: 36 },
         { x: 55, y: 25 },
         { x: 40, y: 18 },
-      ]
+      ],
+      
     }
-  ]
-}
+   
+  ],
+
+    tooltips: {
+       callbacks: {
+          label: function(tooltipItem, data) {
+             var label = data.labels[tooltipItem.index];
+             return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+          }
+       }
+    }
+ };
+
 
 class ScatterGraph extends Component {
     render() {
