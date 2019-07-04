@@ -10,7 +10,7 @@ const data = {
       fill: false,
       backgroundColor: 'rgba(75,192,192,0.4)',
       pointBorderColor: 'rgba(75,192,192,1)',
-      pointBackgroundColor: '#fff',
+      pointBackgroundColor: 'rgba(75,132,197,0.85)',
       pointBorderWidth: 1,
       pointHoverRadius: 5,
       pointHoverBackgroundColor: 'rgba(75,192,192,1)',
@@ -19,14 +19,6 @@ const data = {
       pointRadius: 1,
       pointHitRadius: 10,
       data: [
-        /* import { csvlink, csvdownload } form "react-csv"
-        const csvData = [
-            ["firstname", "lastname", "email"],
-            ["Fulano", "Silva", "fulanosilva@gmail.com"]
-        ];
-        <CSVLink data={csvData}>Download me</CSVLink>;
-         or
-        <CSVDownload data={csvData} target="_blank" />; */
         { x: 65, y: 75 },
         { x: 59, y: 49 },
         { x: 80, y: 90 },
@@ -44,6 +36,6 @@ class ScatterGraph extends Component {
         return (
             <Scatter data={data} />
         )
-    }
+    };
 }
 export default ScatterGraph;
