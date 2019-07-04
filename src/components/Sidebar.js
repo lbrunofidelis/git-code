@@ -45,6 +45,11 @@ class Sidebar extends Component {
                     <Link to="/ponto">Ponto</Link>
                 </NavText>
             </NavItem>
+            <NavItem eventKey="charts/barchart">
+                <NavText>
+                    <Link to="/scatter">Scatter</Link>
+                </NavText>
+            </NavItem>
         </NavItem>
     </SideNav.Nav>
 </SideNav>)}
