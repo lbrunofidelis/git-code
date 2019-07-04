@@ -10,6 +10,6 @@ export {
     RadarPage,
     PizzaPage,
     PontoPage,
-    ScatterPage,
-    Inicio
+    Inicio,
+    ScatterPage
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
-import { RadarPage, PizzaPage, PontoPage, Inicio } from './pages';
+import { RadarPage, PizzaPage, PontoPage, Inicio,ScatterPage } from './pages';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
@@ -13,6 +13,7 @@ ReactDOM.render(
             <Route path="/pizza" component={PizzaPage} />
             <Route path="/Inicio" component={Inicio} />
             <Route path="/ponto" component={PontoPage} />
+            <Route path="/scatter" component={ScatterPage} />
         </Switch>
     </ BrowserRouter>
     , document.getElementById('root')

@@ -15,7 +15,7 @@ class Home extends Component {
             <div className="App">
                 <header className="App-header">
                     <Sidebar/>
-                    <div className = "Grafico">
+                    <div >
                         {this.props.children}
                     </div>
                     
