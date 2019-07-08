@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Pizza from '../components/Pizza';
 import Home from './Home';
 import '../styles/App.css';
-import dados from'../data/dados'
+import Populacao from'../data/populacao'
 class PizzaPage extends Component {
 	constructor(){
 		super()
@@ -13,28 +13,28 @@ class PizzaPage extends Component {
 	}
     handleClick() {
         var x= []
-        for (var key in dados["dados"]){
-        x.push(dados["dados"][key]["quantidade"])
+        for (var key in Populacao["Populacao"]){
+        x.push(Populacao["Populacao"][key]["qtd_pessoas"])
         }
-        console.log("ola")
+        
         this.setState(state => ({
             data:x
           }));
       }
       handleClick2() {
         var y= []
-        for (var key in dados["dados"]){
-        y.push(dados["dados"][key]["escolaridade"])
+        for (var key in Populacao["Populacao"]){
+        y.push(Populacao["Populacao"][key]["escolaridade_media"])
         }
-        console.log("ola2")
+        
         this.setState(state => ({
             data:y
           }));
       }
       handleClick3() {
         var z= []
-        for (var key in dados["dados"]){
-        z.push(dados["dados"][key]["renda"])
+        for (var key in Populacao["Populacao"]){
+        z.push(Populacao["Populacao"][key]["renda_medida"])
         }
 
         this.setState(state => ({
@@ -48,7 +48,7 @@ class PizzaPage extends Component {
         return(
             <Home>
                 <div className = "Grafico">
-                <Pizza dados={dados} data={this.state.data}/>
+                <Pizza Populacao={Populacao} data={this.state.data}/>
                 </div>
                 <div className ="btnBar">
                 <button className="btn Pizza-btn" onClick={this.handleClick}>

@@ -6,8 +6,7 @@ defaults.global.defaultFontStyle = 'bold';
 
 defaults.global.defaultFontSize = 15;
 const data = {
-  labels: ['Scatter'],
-
+ 
 
   datasets: [
     {
@@ -23,19 +22,15 @@ const data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      
-      
       data: [
         { x: 20, y: 20 },
         { x: 59, y: 49 },
         { x: 80, y: 90 },
-        { x: 81, y: 29 },
-        { x: 56, y: 36 },
-        { x: 55, y: 25 },
-        { x: 100, y: 18 },
+ 
       ],
       
     },
+
     {
       label: ["GO"],
       fill: false,
@@ -49,33 +44,40 @@ const data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      
-      
       data: [
         { x: 20, y: 10 },
       ]
       
-    }
+    },
     
-
    
-  ],
+  ]
+  
 
+ };
+ 
+ const options= {
+  
+    title:{
+      display: true,
+      text:"rendax escolar"
+    },
     tooltips: {
        callbacks: {
           label: function(tooltipItem, data) {
-             var label = data.labels[tooltipItem.index];
-             return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+             var label = data.datasets[tooltipItem.datasetIndex].label||'';
+             return label;
           }
        }
     }
+  
  };
 
 
 class ScatterGraph extends Component {
     render() {
         return (
-            <Scatter data={data} />
+            <Scatter data={data} options ={options} />
         )
     };
 }

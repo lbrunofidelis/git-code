@@ -15,9 +15,10 @@ class Pizza extends Component {
 		{
 			var x=[]
 			var y=[]
-			for (var key in this.props.dados["dados"]){
-			x.push(this.props.dados["dados"][key]["Estado"])
-			y.push(this.props.dados["dados"][key]["quantidade"])
+			for (var key in this.props.Populacao["Populacao"]){
+				console.log(this.props.Populacao)
+			x.push(this.props.Populacao["Populacao"][key]["label"])
+			y.push(this.props.Populacao["Populacao"][key]["qtd_pessoas"])
 			
 			}
 			var data =[]
