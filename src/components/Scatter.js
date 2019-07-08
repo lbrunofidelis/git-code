@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import {Scatter} from 'react-chartjs-2';
+import {defaults} from 'react-chartjs-2';
 import '../styles/App.css';
+defaults.global.defaultFontStyle = 'bold';
 
+defaults.global.defaultFontSize = 15;
 const data = {
   labels: ['Scatter'],
 
 
   datasets: [
     {
-      label: ["My First dataset"],
-      fill: true,
+      label: ["DF"],
+      fill: false,
       backgroundColor: 'rgba(75,192,192,0.4)',
       pointBorderColor: 'rgba(75,192,192,1)',
       pointBackgroundColor: 'rgba(75,132,197,0.85)',
@@ -21,17 +24,40 @@ const data = {
       pointRadius: 1,
       pointHitRadius: 10,
       
+      
       data: [
-        { x: 65, y: 75 },
+        { x: 20, y: 20 },
         { x: 59, y: 49 },
         { x: 80, y: 90 },
         { x: 81, y: 29 },
         { x: 56, y: 36 },
         { x: 55, y: 25 },
-        { x: 40, y: 18 },
+        { x: 100, y: 18 },
       ],
       
+    },
+    {
+      label: ["GO"],
+      fill: false,
+      backgroundColor: 'rgb(255, 0, 160)',
+      pointBorderColor: 'rgb(255, 0, 160)',
+      pointBackgroundColor: 'rgba(75,132,197,0.85)',
+      pointBorderWidth: 10,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+      
+      
+      data: [
+        { x: 20, y: 10 },
+      ]
+      
     }
+    
+
    
   ],
 
