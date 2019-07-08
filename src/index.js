@@ -12,7 +12,6 @@ ReactDOM.render(
             <Route path="/radar" component={RadarPage} />
             <Route path="/pizza" component={PizzaPage} />
             <Route path="/Inicio" component={Inicio} />
-            <Route path="/ponto" component={PontoPage} />
             <Route path="/scatter" component={ScatterPage} />
         </Switch>
     </ BrowserRouter>
