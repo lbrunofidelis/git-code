@@ -18,7 +18,7 @@ class Sidebar extends Component {
                 <i className="fa fa-home" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
-                <Link to="/Inicio">
+                <Link to="/">
                         Home
                 </Link>
             </NavText>

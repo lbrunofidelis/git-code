@@ -8,6 +8,10 @@ class Inicio extends Component {
     render() {
         return(
             <Home>
+                <div className="logo">
+                    <img src="images/gitcode.png"></img>
+                </div>
+                
                 <div className = "inicio">
                     <h1 className ="Titulo">
                         Desenvolvimento de software
@@ -25,7 +29,7 @@ class Inicio extends Component {
                         Metodologia
                     </h3>
                         <p className = "Paragrafo">
-                            A  base aplicação foi desenvolvida utilizando da linguagem JavaScript e axiliada pelo framework React JS.
+                            A base aplicação foi desenvolvida utilizando da linguagem JavaScript e pela biblioteca React JS.
                         </p>
                     </div>
                     <div>
@@ -33,17 +37,17 @@ class Inicio extends Component {
                         Objetivos
                     </h3>
                         <p className = "Paragrafo">
-                            Os Objetivos almejados com  o desenvolvido dessa aplicação são de expor em forma grafica, dados elaborados por outros integrantes da disciplina.
+                            Os objetivos almejados com o desenvolvido dessa aplicação são expor, em forma gráfica, os dados elaborados por outros integrantes da disciplina.
                         </p>
                     </div>  
                     <div>
                     <h3 className ="Sub-titulo">
-                        integrantes
+                        Integrantes
                     </h3>
                         <p className = "Paragrafo">
-                        Luis Bruno / 140169695<br/>
-                        Hugo Aragão / 160124581<br/>
-                        Andre Eduardo / 160111978
+                        Luis Bruno / 140169695 - <a target="_blank" href="https://www.github.com/lbrunofidelis">@lbrunofidelis</a><br/>
+                        Hugo Aragão / 160124581 - <a target="_blank" href="https://www.github.com/codehg">@codehg</a><br/>
+                        Andre Eduardo / 160111978 - <a target="_blank" href="https://www.github.com/Andre-Eduardo">@Andre-Eduardo</a>
                         </p>
                     </div>  
                 </div>
