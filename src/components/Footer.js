@@ -6,8 +6,10 @@ class Footer extends Component {
     render() {
         return (
 
-            <div>
-               <a href ="https://github.com/fabiommendes/desenvolvimento-de-software/blob/master/trabalhos/web_charts_js.md"> Github</a>
+            <div className="github-logo">
+                <a href ="https://github.com/fabiommendes/desenvolvimento-de-software/blob/master/trabalhos/web_charts_js.md">
+                    <img target="_blank" src="images/github-logo.png"></img>
+                </a>
             </div>
 
          )}

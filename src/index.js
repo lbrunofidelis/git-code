@@ -8,10 +8,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={RadarPage} />
+            <Route path="/" exact={true} component={Inicio} />
             <Route path="/radar" component={RadarPage} />
             <Route path="/pizza" component={PizzaPage} />
-            <Route path="/Inicio" component={Inicio} />
             <Route path="/ponto" component={PontoPage} />
             <Route path="/scatter" component={ScatterPage} />
         </Switch>

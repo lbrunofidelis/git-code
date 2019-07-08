@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import '../styles/App.css';
-import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 
