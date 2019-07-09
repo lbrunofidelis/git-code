@@ -25,7 +25,7 @@ class Sidebar extends Component {
         </NavItem>
         <NavItem eventKey="charts">
             <NavIcon>
-                <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+                <i className="fa fa-chart-area" style={{ fontSize: '1.75em' }} />
             </NavIcon>
             <NavText>
                 Charts

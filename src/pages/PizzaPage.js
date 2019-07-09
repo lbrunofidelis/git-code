@@ -16,7 +16,7 @@ class PizzaPage extends Component {
     handleClick = () => {
         var x = []
         for (var key in Populacao["Populacao"]){
-        x.push(Populacao["Populacao"][key]["qtd_pessoas"])
+            x.push(Populacao["Populacao"][key]["qtd_pessoas"])
         }
         
         this.setState(state => ({
