@@ -13,7 +13,9 @@ class Home extends Component {
         return (
             <div className="App">
                 <header className="App-header">
+                    
                     <Sidebar/>
+                    
                     <div className= "graf">
                         {this.props.children}
                     </div>
