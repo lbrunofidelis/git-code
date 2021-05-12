@@ -6,7 +6,7 @@
     "@trendmicro/react-sidenav": "^0.4.5",
     "browserslist": "^4.6.3",
     "caniuse-lite": "^1.0.30000974",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "react": "^16.8.6",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.8.6",
