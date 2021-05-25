@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@trendmicro/react-sidenav": "^0.4.5",
-    "browserslist": "^4.6.3",
+    "browserslist": "^4.16.5",
     "caniuse-lite": "^1.0.30000974",
     "chart.js": "^2.8.0",
     "react": "^16.8.6",
